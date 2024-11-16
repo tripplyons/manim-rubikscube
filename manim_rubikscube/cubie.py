@@ -39,7 +39,7 @@ class Cubie(VGroup):
         faces = np.array(get_faces_of_cubie(self.dimensions, (self.position[0], self.position[1], self.position[2]))).tolist()
         i = 0
         for vect in OUT, DOWN, LEFT, IN, UP, RIGHT:
-            face = Square(side_length=2, shade_in_3d=True, stroke_width=3)#(**self.dict)
+            face = Square(side_length=2, shade_in_3d=True, stroke_width=4, stroke_color="#000000")#(**self.dict)
             if vect.tolist() in faces:
                 face.set_fill(self.colors[i], 1)
             else:

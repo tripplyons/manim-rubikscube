@@ -13,7 +13,7 @@ class RubiksCube(VMobject):
     indices = {}
 
     # Colors are in the order Up, Right, Front, Down, Left, Back
-    def __init__(self, dim=3, colors=[WHITE, "#B90000", "#009B48", "#FFD500", "#FF5900", "#0045AD"], x_offset=2.1, y_offset=2.1, z_offset=2.1):#, **kwargs):
+    def __init__(self, dim=3, colors=[WHITE, "#B90000", "#009B48", "#FFD500", "#FF5900", "#0045AD"], x_offset=2, y_offset=2, z_offset=2):#, **kwargs):
         if not (dim >= 2):
             raise Exception("Dimension must be >= 2")
 
